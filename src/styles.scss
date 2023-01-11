@@ -126,6 +126,14 @@ body {
   }
 }
 
+.section-2 {
+  display: flex;
+}
+
+.section-2 .wrapper {
+  align-self: flex-end;
+}
+
 .section-2,
 .nav {
   padding: 24px;
