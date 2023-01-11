@@ -1,20 +1,31 @@
-import { Link, useMatch, useResolvedPath } from "react-router-dom"
+import {
+  Link,
+  useMatch,
+  useResolvedPath,
+} from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav className="nav">
-      <ul>
-        <CustomLink to="/">Home</CustomLink>
-        <CustomLink to="/projects">Projects</CustomLink>
-        <CustomLink to="/about">About</CustomLink>
-      </ul>
-    </nav>
-  )
+    //assimilate flex to hero section
+    <div className="nav-wrapper">
+      <div></div>
+      <div className="nav">
+        <ul>
+          <CustomLink to="/">Home</CustomLink>
+          <CustomLink to="/projects">Projects</CustomLink>
+          <CustomLink to="/about">About</CustomLink>
+        </ul>
+      </div>
+    </div>
+  );
 }
 
 function CustomLink({ to, children, ...props }) {
-  const resolvedPath = useResolvedPath(to)
-  const isActive = useMatch({ path: resolvedPath.pathname, end: true })
+  const resolvedPath = useResolvedPath(to);
+  const isActive = useMatch({
+    path: resolvedPath.pathname,
+    end: true,
+  });
 
   return (
     <li className={isActive ? "active" : ""}>
@@ -22,5 +33,5 @@ function CustomLink({ to, children, ...props }) {
         {children}
       </Link>
     </li>
-  )
+  );
 }
