@@ -10,6 +10,13 @@ body {
 
 .container {
   margin: 1rem;
+  max-width: 
+}
+
+.hero-wrapper {
+  width: 100vw;
+  display: flex;
+
 }
 
 .nav {

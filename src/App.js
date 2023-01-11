@@ -1,9 +1,9 @@
-import Navbar from "./components/Navbar"
-import Header from "./components/Header"
-import Home from "./pages/home"
-import Projects from "./pages/projects"
-import About from "./pages/about"
-import { Route, Routes } from "react-router-dom"
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import Home from "./pages/home";
+import Projects from "./pages/projects";
+import About from "./pages/about";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         </Routes>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
