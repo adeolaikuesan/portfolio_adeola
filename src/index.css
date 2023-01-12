@@ -10,7 +10,6 @@ body {
 
 .container {
   margin: 1rem;
-  max-width: 
 }
 
 .hero-wrapper {
@@ -20,7 +19,7 @@ body {
 }
 
 .nav {
-  color: #37648C;
+  color: #37648C !important;
   display: flex;
   justify-content: space-between;
   align-items: stretch;

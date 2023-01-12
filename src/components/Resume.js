@@ -25,7 +25,7 @@ const Resume = () => {
         <div className="education details">
           <div className="overall">
             <div className="programme">Current credits:</div>
-            <div className="time">249</div>
+            <div className="time">249/300</div>
           </div>
           <div className="specifics">
            
